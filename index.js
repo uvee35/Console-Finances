@@ -174,10 +174,41 @@ var finances = [
     
     ];
     
-    // Total Number of Months
+// Total Number of Months
     
-     let totalMonths = finances.length;
+let totalMonths = finances.length;
     
-    // Net Total Amount of Profit/Losses
+// Net Total Amount of Profit/Losses
     
-     let netTotal = finances.reduce((total, month) => total + month[1], 0);
+let netTotal = finances.reduce((total, month) => total + month[1], 0);
+
+// Average Change in Profit/Losses
+ 
+let totalChange = 0;
+
+for(let i = 1; i < finances.length; i++) {
+
+totalChange += finances[i][1] - finances[i-1][1];
+
+}
+let averageChange = totalChange / (totalMonths - 1);
+
+
+// Greatest Increase in Profits
+
+  
+let greatestIncrease = { Date: '', Amount: 0 };
+
+for(let i = 1; i < finances.length; i++) {
+
+let change = finances[i][1] - finances[i-1][1];
+
+if(change > greatestIncrease.Amount) {
+
+greatestIncrease.Amount = change;
+
+greatestIncrease.Date = finances[i][0];
+
+}
+
+}
