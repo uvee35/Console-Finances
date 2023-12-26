@@ -174,4 +174,6 @@ var finances = [
     
     ];
 
-    
+    // Total Number of Months
+
+let totalMonths = finances.length;
