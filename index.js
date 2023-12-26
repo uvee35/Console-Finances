@@ -173,7 +173,11 @@ var finances = [
     ['Feb-2017', 671099],
     
     ];
-
+    
     // Total Number of Months
-
-let totalMonths = finances.length;
+    
+     let totalMonths = finances.length;
+    
+    // Net Total Amount of Profit/Losses
+    
+     let netTotal = finances.reduce((total, month) => total + month[1], 0);
