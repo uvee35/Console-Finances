@@ -19,7 +19,7 @@ Console-Finances is a JavaScript-based application designed to analyze financial
 
 1. **Clone the Repository**:
    ```bash
-   git clone [URL-of-your-repo]
+   git clone git@github.com:uvee35/Console-Finances.git
    ```
 2. **Navigate to the Project Directory**:
    ```bash
@@ -49,9 +49,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [Your Email] - [Your Twitter/LinkedIn]
+Victor Marques- victormarquesrina@hotmail.com - https://www.linkedin.com/in/victor-marques-rina-944209102/
 
-Project Link: [https://github.com/your_username/Console-Finances](https://github.com/your_username/Console-Finances)
+Project Link: https://uvee35.github.io/Console-Finances/
+
+
+
+<img width="2239" alt="Screenshot 2023-12-26 at 22 39 07" src="https://github.com/uvee35/Console-Finances/assets/151088688/16ebe74b-3bd3-4acc-bf6a-58e0dabf584c">
+
+
+
 
 ## Resources
 
