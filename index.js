@@ -212,3 +212,37 @@ greatestIncrease.Date = finances[i][0];
 }
 
 }
+
+// Greatest Decrease in Losses
+
+  
+
+let greatestDecrease = { Date: '', Amount: 0 };
+
+for(let i = 1; i < finances.length; i++) {
+
+let change = finances[i][1] - finances[i-1][1];
+
+if(change < greatestDecrease.Amount) {
+
+greatestDecrease.Amount = change;
+
+greatestDecrease.Date = finances[i][0];
+
+}
+
+}
+
+// Format and Print the Analysis
+console.log(
+    `Financial Analysis
+    ----------------------------
+    Total Months: ${totalMonths}
+    Total: $${netTotal}
+    Average Change: $${averageChange.toFixed(2)}
+    Greatest Increase in Profits/Losses: ${greatestIncrease.Date} ($${greatestIncrease.Amount})
+    Greatest Decrease in Profits/Losses: ${greatestDecrease.Date} ($${greatestDecrease.Amount})`
+    );
+    
+  
+  
